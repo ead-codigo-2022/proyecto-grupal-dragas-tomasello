@@ -57,7 +57,7 @@ header {
     background: linear-gradient(to bottom,rgb(255, 255, 255),rgb(245, 245, 245));
     color: rgb(212, 212, 212);
     height: 90px;
-    padding: 0%;
+    padding: 3rem;
     position: fixed;
     left: 0;
     right: 14.5px;
