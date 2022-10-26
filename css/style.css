@@ -3,6 +3,14 @@
     box-sizing:border-box;
 }
 
+:root{
+    --color1: #0967af;
+    --color2: #0699d2;
+    --color3: #54d1f6;
+    --color4: #adfff7;
+    --color5: #f4fcf4;
+}
+
 body {
     font-size: 1.5rem;
     line-height: 2rem;
