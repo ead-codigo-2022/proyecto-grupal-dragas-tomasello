@@ -56,8 +56,6 @@ header a {
 }
 
 nav ul {
-    margin: 0;
-    padding: 0;
     list-style: none;
 }
 nav ul li {
@@ -67,10 +65,11 @@ nav ul li a {
     display: block;
     padding-inline: .5rem 1rem;
     border-radius: 20px;
+    transition: all 0.2s linear;
 }
 nav ul li a:hover {
-    font-size: 1.8rem;
-    transition: all 0.1s linear;
+    font-size: 1.4rem;
+    transition: all 0.2s linear;
 }
 
 main{
@@ -84,8 +83,8 @@ main{
     width:100vw;
     height:100vh;
     display:flex;
-    justify-content:right;
-    align-items:right;
+    justify-content:center;
+    align-items:center;
     text-align:right;
     color: var(--color6);
     background-image:linear-gradient(to right, rgba(255, 255, 255, 0.30),var(--color5)),
@@ -94,10 +93,6 @@ main{
     background-position:center center;
     background-repeat:no-repeat;
     background-attachment:fixed
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
 }
 .hero-inner{
     width: 60%;
