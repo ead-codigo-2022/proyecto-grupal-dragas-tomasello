@@ -9,6 +9,7 @@
     --color3: #54d1f6;
     --color4: #adfff7;
     --color5: #f4fcf4;
+    --color6: #042035;
 }
 
 body {
@@ -16,8 +17,9 @@ body {
     line-height: 2rem;
     color: brown;
     margin:0;
-    font-family:sans-serif
+    font-family:sans-serif;
 }
+
 .hero{
     width:100vw;
     height:100vh;
@@ -28,23 +30,25 @@ body {
     color:#fff;
     background-image:linear-gradient(to right, rgba(255, 255, 255, 0),rgb(255, 255, 255)),
     url('../img/hero.jpg');
+    color: var(--color6);
+    background-image:linear-gradient(to right, rgba(255, 255, 255, 0.30),var(--color5)),
+    url('../img/Marina-DeBris.jpg');
     background-size:cover;
     background-position:center center;
     background-repeat:no-repeat;
     background-attachment:fixed
 }
-    
+
 .hero h1{
     margin-right: 2.5em;
-    color: rgb(10, 10, 10);
     text-shadow: 2rem;
     font-size:3.5em;
+    line-height: 1;
     margin: top 5em;
     margin-bottom:.5em
 }
 .hero h2{
     margin-right: 6em;
-    color: rgb(10, 10, 10);
     text-shadow: 2rem;
     margin: top 5em;
     margin-bottom:.5em
@@ -63,7 +67,6 @@ p{
 
 header {
     background: linear-gradient(to bottom,rgb(255, 255, 255),rgb(245, 245, 245));
-    color: rgb(212, 212, 212);
     height: 90px;
     padding: 3rem;
     position: fixed;
@@ -76,7 +79,7 @@ header {
     align-items: center;
 }
 header a {
-    color: rgb(8, 8, 8);
+    color: var(--color6);
     text-decoration: none;
 }
 
