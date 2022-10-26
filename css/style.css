@@ -7,10 +7,46 @@ body {
     font-size: 1.5rem;
     line-height: 2rem;
     color: brown;
+    margin:0;
+    font-family:sans-serif
 }
-
+.hero{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content:right;
+    align-items:right;
+    text-align:right;
+    color:#fff;
+    background-image:linear-gradient(to right, rgba(255, 255, 255, 0),rgb(255, 255, 255)),
+    url('../img/Marina-DeBris.jpg');
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-attachment:fixed
+}
+    
+.hero h1{
+    margin-right: 2.5em;
+    color: rgb(10, 10, 10);
+    text-shadow: 2rem;
+    font-size:3.5em;
+    margin: top 5em;
+    margin-bottom:.5em
+}
+.hero h2{
+    margin-right: 6em;
+    color: rgb(10, 10, 10);
+    text-shadow: 2rem;
+    margin: top 5em;
+    margin-bottom:.5em
+}
+    
 h1{
     margin-bottom: 2rem;
+    font-size: medium;
+    
+    text-size-adjust: 50rem;
 }
 
 p{
@@ -18,10 +54,10 @@ p{
 }
 
 header {
-    background: brown;
-    color: antiquewhite;
-    height: 98px;
-
+    background: linear-gradient(to bottom,rgb(255, 255, 255),rgb(245, 245, 245));
+    color: rgb(212, 212, 212);
+    height: 90px;
+    padding: 0%;
     position: fixed;
     left: 0;
     right: 14.5px;
@@ -32,7 +68,7 @@ header {
     align-items: center;
 }
 header a {
-    color: antiquewhite;
+    color: rgb(8, 8, 8);
     text-decoration: none;
 }
 
@@ -45,6 +81,7 @@ header a {
     font-size: 2.3rem;
     transition: all 0.1s linear;
 }
+
 
 .container {
     width: 85%;
