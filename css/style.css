@@ -20,7 +20,7 @@ p{
 header {
     background: brown;
     color: antiquewhite;
-    height: 50px;
+    height: 98px;
 
     position: fixed;
     left: 0;
@@ -37,8 +37,6 @@ header a {
 }
 
 .logo{
-    letter-spacing: .5rem;
-    font-size: 2rem;
     transition: all 0.1s linear;
 }
 
