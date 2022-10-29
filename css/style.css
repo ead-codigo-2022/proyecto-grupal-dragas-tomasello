@@ -65,11 +65,13 @@ nav ul li a {
     display: block;
     padding-inline: .5rem 1rem;
     border-radius: 20px;
-    transition: all 0.2s linear;
+    transition: all 0.1s linear;
 }
 nav ul li a:hover {
-    font-size: 1.4rem;
-    transition: all 0.2s linear;
+    font-size: 1.8rem;
+    color: var(--color1);
+    transition: all 0.1s linear;
+
 }
 
 main{
@@ -113,6 +115,7 @@ main{
 
 
 h1{
+    margin-top: 3rem;
     margin-bottom: 2rem;
     font-size: 2.5rem;  
 }
@@ -123,7 +126,7 @@ p{
 }
 
 section{
-    scroll-snap-align:start;
+    scroll-snap-align:center;
     height:100vh;
     background-color:var(--color1);
     display:flex;
@@ -132,14 +135,13 @@ section{
 }
 
 .container {
+    margin-top: auto/2;
     width: 60%;
     padding: 1rem;
     background: var(--color2)
     
 }
-section img{
-    width: 400px;
-}
+
 #Agua{
  
 }
