@@ -125,7 +125,7 @@ p{
 section{
     scroll-snap-align:start;
     height:100vh;
-    background:var(--color1);
+    background-color:var(--color1);
     display:flex;
     justify-content:center;
     align-items:center;
@@ -137,7 +137,9 @@ section{
     background: var(--color2)
     
 }
-
+section img{
+    width: 400px;
+}
 #Agua{
  
 }
