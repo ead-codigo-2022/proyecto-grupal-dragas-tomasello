@@ -12,12 +12,14 @@
     --color-4: #efdfed;
     --color-5: #f9f4f4;
     --color-6: rgba(0, 0, 0,0.2);
+    --vw: calc(100vw - 1vw);
+    --minv: calc(90vmin - 1vw);
 }
 
 /*===menu===*/
 .navigation{
     position: fixed;
-    width: calc(100vw - 1vw);
+    width: var(--vw);
     background-color: var(--color-6);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -72,7 +74,7 @@
     grid-column: 2;
 }
 .head h2{
-    font-size: 1.8rem;
+    font-size: 1.4rem;
 }
 .logo{
     height: 52px;
@@ -81,8 +83,8 @@
 }
 
 .nav_list{
-    width: 100vmin;
-    margin: .5rem;
+    
+    margin: 1rem;
     place-self: center;
     list-style: none;
     grid-row: 2;
@@ -94,6 +96,7 @@
     display: none;
 }
 .navigation.active .nav_list{
+    width: calc(var(--minv) - 2rem);
     display: flex;}
 .nav_link{
     color: var(--color-5);
@@ -116,7 +119,7 @@
 
 .hero{
     scroll-snap-align: start;
-    width:calc(100vw - 1vw);
+    width:var(--vw);
     height:100vh;
     display:flex;
     justify-content:center;
@@ -130,11 +133,11 @@
     background-attachment:fixed
 }
 .hero_inner{
-    width: 100vmin;
+    width: var(--minv);
     padding: .5rem;
 }
 .hero h1{
-    font-size: 14vmin;
+    font-size: 12vmin;
     font-weight: 900;
 }
 .hero h2{
@@ -157,13 +160,15 @@ section{
 
 article{
     background-color: var(--color-5);
-    width: 100vmin;
-    height: 70vmin;
+    width: var(--minv);
+    height: auto;
+    padding: 1rem;
 }
 
 footer{
     background-color: var(--color-1);
     scroll-snap-align: start;
+
     height: 100vh;
 
 }
@@ -181,7 +186,7 @@ footer{
 /*Pantalla XS*/
 @media screen and (max-width: 480px), (max-height: 480px){
     .navigation{
-        margin: 1rem;
+        margin: .9rem;
         width: auto;
         border-radius: 8px;
         grid-template-columns: repeat(2, AUTO);
