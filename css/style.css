@@ -6,12 +6,12 @@
     font-family: 'Roboto', sans-serif;
 }
 :root{
-    --color-1: #55839e;
-    --color-2: #a1aeca;
-    --color-3: #e0cae5;
-    --color-4: #efdfed;
-    --color-5: #f9f4f4;
-    --color-6: rgba(0, 0, 0,0.2);
+    --color-1: #100a45;
+    --color-2: #79187a;
+    --color-3: #24b0ff;
+    --color-4: #bbecf9;
+    --color-5: #fffbf4;
+    --color-6: rgb(121, 24, 122, 0.3);
     --vw: calc(100vw - 1vw);
     --minv: calc(90vmin - 1vw);
 }
@@ -61,7 +61,7 @@
 }
 .navigation.active .menu_toggle::after{
     transform: translateY(0) rotate(-45deg);
-    box-shadow: 0 0 var(--color-1);
+    box-shadow: 0 0 var(--color-5);
 }
 
 
@@ -105,7 +105,7 @@
     font-size: 1.5rem;
 }
 .nav_link:hover{
-    color: var(--color-3);
+    color: var(--color-4);
     font-size: 1.4rem;
 }
 
@@ -159,7 +159,7 @@ section{
 }
 
 article{
-    background-color: var(--color-5);
+    background-color: var(--color-3);
     width: var(--minv);
     height: auto;
     padding: 1rem;
@@ -168,9 +168,26 @@ article{
 footer{
     background-color: var(--color-1);
     scroll-snap-align: start;
-
     height: 100vh;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: var(--color-5);
+}
+footer h3{
+    font-weight: 300;
+}
+footer a{
+    color: var(--color-5);
+    text-decoration: none;
+}
+footer a:hover{
+    color: var(--color-4);
 }
 
 
