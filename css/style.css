@@ -1,147 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap');
 *{
+    margin: 0;
     padding: 0;
-    margin:0;
-    box-sizing:border-box;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
-
 :root{
-    --color1: #0967af;
-    --color2: #0699d2;
-    --color3: #54d1f6;
-    --color4: #adfff7;
-    --color5: #f4fcf4;
-    --color6: #052a46;
+    --color-1: #55839e;
+    --color-2: #a1aeca;
+    --color-3: #e0cae5;
+    --color-4: #efdfed;
+    --color-5: #f9f4f4;
 }
 
-body {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    color: var(--color5);
-    font-family:sans-serif;
-}
-
-
-header {
-    background: var(--color5);
-    height: 90px;
-    padding: 3rem;
+/*===menu===*/
+.navigation{
     position: fixed;
-    left: 0;
-    right: 14.5px;
-    top: 0;
-    
+    width: 100vw;
+    background-color: var(--color-2);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: auto auto;
+}
+
+/*BOTON-HAMBURGUESA*/
+.menu_toggle{
+    width: 38px;
+    height: 38px;
+    margin: 7px;
+    align-self: center;
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.menu_toggle::before{
+    content: '';
+    position: absolute;
+    width: 38px;
+    height: 3px;
+    background-color: var(--color-5);
+    transform: translateY(-12px);
+    transition: 500ms;
+}
+.menu_toggle::after{
+    content: '';
+    position: absolute;
+    width: 38px;
+    height: 3px;
+    background-color: var(--color-5);
+    transform: translateY(12px);
+    transition: 500ms;
+    box-shadow: 0 -12px var(--color-5);
+}
+.navigation.active .menu_toggle::before{
+    transform: translateY(0) rotate(45deg);
+}
+.navigation.active .menu_toggle::after{
+    transform: translateY(0) rotate(-45deg);
+    box-shadow: 0 0 var(--color-1);
+}
+
+
+/*El Resto*/
+.head{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--color-5);
+    grid-column: 2;
 }
-header a {
-    color: var(--color6);
-    text-decoration: none;
-}
-
-.logo{
-    transition: all 0.1s linear;
-}
-
-.logo:hover{
-    letter-spacing: .5rem;
-    font-size: 2.3rem;
-    transition: all 0.1s linear;
-}
-
-.logo-nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav ul {
-    list-style: none;
-}
-nav ul li {
-    display: inline-block;
-}
-nav ul li a {
-    display: block;
-    padding-inline: .5rem 1rem;
-    border-radius: 20px;
-    transition: all 0.1s linear;
-}
-nav ul li a:hover {
+.head h2{
     font-size: 1.8rem;
-    color: var(--color1);
-    transition: all 0.1s linear;
-
+}
+.logo{
+    height: 52px;
+    margin: .5rem;
+    filter: invert(100%) sepia(23%) saturate(1130%) hue-rotate(26deg) brightness(113%) contrast(107%);
 }
 
-main{
-    scroll-snap-type: y mandatory;
-    overflow-y:scroll;
-    height:100vh;
+.nav_list{
+    width: 100vmin;
+    margin: .5rem;
+    place-self: center;
+    list-style: none;
+    grid-row: 2;
+    grid-column: 1/4;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 
+    display: none;
+}
+.navigation.active .nav_list{
+    display: flex;}
+.nav_link{
+    color: var(--color-5);
+    text-decoration: none;
+    padding: .3rem;
+    font-size: 1.5rem;
+}
+.nav_link:hover{
+    color: var(--color-3);
+    font-size: 1.4rem;
+}
+
+
+/*===scroll+cuerpo===*/
+.container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
 }
 
 .hero{
+    scroll-snap-align: start;
     width:100vw;
     height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
     text-align:right;
-    color: var(--color6);
-    background-image:linear-gradient(to right, rgba(255, 255, 255, 0.30),var(--color5)),
-    url('../img/hero.jpg');
+    color: var(--color-1);
+    background-image:linear-gradient(to right, rgba(255, 255, 255, 0.30),var(--color-5)),url('../img/hero.jpg');
     background-size:cover;
     background-position:center center;
     background-repeat:no-repeat;
     background-attachment:fixed
 }
-.hero-inner{
-    width: 60%;
+.hero_inner{
+    width: 100vmin;
+    padding: .5rem;
 }
 .hero h1{
-    margin-top: 2.6em;
-    text-shadow: 2rem;
-    font-size:3.5em;
-    line-height: 1;
-    margin: top 5em;
-    margin-bottom:.5em
+    font-size: 14vmin;
+    font-weight: 900;
 }
 .hero h2{
-    text-shadow: 2rem;
-    margin: top 5em;
-    margin-bottom:.5em
+    font-size: 9vmin;
+    font-weight: 700;
 }
 
 
-h1{
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    font-size: 2.5rem;  
-}
-
-p{
-    font-size: 1.3rem;
-    padding-bottom: 1rem;
+main{
+    background-color: var(--color-4);
 }
 
 section{
-    scroll-snap-align:center;
-    height:100vh;
-    background-color:var(--color1);
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    scroll-snap-align: start;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.container {
-    margin-top: auto/2;
-    width: 60%;
-    padding: 1rem;
-    background: var(--color2)
-    
+article{
+    background-color: var(--color-5);
+    width: 100vmin;
+    height: 70vmin;
 }
 
-#Agua{
- 
+footer{
+    background-color: var(--color-1);
+    scroll-snap-align: start;
+    height: 100vh;
+
+}
+
+
+
+/*Panllas S*/
+@media screen and (max-width: 720px){
+     /*===menu===*/
+     /*El Resto*/
+     .nav_list{
+    align-items: center;
+    flex-direction: column;}
+}
+/*Pantalla XS*/
+@media screen and (max-width: 480px), (max-height: 480px){
+    .navigation{
+        margin: 1rem;
+        width: auto;
+        border-radius: 8px;
+        grid-template-columns: repeat(2, AUTO);
+    }
+    .head{
+        display: none;
+    }
+    .navigation.active .head{
+        width: auto;
+        display: flex;
+    }
+    .nav_list{
+        width: auto;
+        grid-column: 1/3;
+    }
 }
