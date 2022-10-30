@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap');
-*{
+*,
+*::before,
+*::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -125,11 +127,13 @@ body{
     scroll-snap-align: start;
     width:var(--vw);
     height:100vh;
+    color: var(--color-1);
+
     display:flex;
     justify-content:center;
     align-items:center;
     text-align:right;
-    color: var(--color-1);
+
     background-image:linear-gradient(to right, rgba(255, 255, 255, 0.30),var(--color-5)),url('../img/hero.jpg');
     background-size:cover;
     background-position:center center;
@@ -201,10 +205,12 @@ footer a:hover{
      /*===menu===*/
      /*El Resto*/
      .nav_list{
-    align-items: center;
-    flex-direction: column;}
+        align-items: center;
+        flex-direction: column;
+     }
+    
 }
-/*Pantalla XS*/
+/*Pantalla XS=movil*/
 @media screen and (max-width: 480px), (max-height: 480px){
     .navigation{
         margin: .9rem;
