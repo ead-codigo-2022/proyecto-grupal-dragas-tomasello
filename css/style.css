@@ -16,6 +16,10 @@
     --minv: calc(90vmin - 1vw);
 }
 
+body{
+    color: var(--color-1);
+}
+
 /*===menu===*/
 .navigation{
     position: fixed;
