@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,56 +9,68 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="navigation">
-        <div class="menu_toggle"></div>
-        <div class="head"><img class="logo" src="./svg/logo.svg" alt=""><h2>titulo <br> pagina</h2></div>
-        <ul class="nav_list">
-            <li class="nav_item"><a href="index.html#1" class="nav_link">Inicio</a></li>
-            <li class="nav_item"><a href="index.html#2" class="nav_link">Itroducción</a></li>
-            <li class="nav_item"><a href="index.html#3" class="nav_link">item3</a></li>
-            <li class="nav_item"><a href="index.html#4" class="nav_link">item4</a></li>
-            <li class="nav_item"><a href="index.html#5" class="nav_link">item5</a></li>
-            <li class="nav_item"><a href="index.html#6" class="nav_link">item6</a></li>
-            <li class="nav_item"><a href="index.html#footer" class="nav_link">Somos</a></li>
-            <li class="nav_item"><a href="./html/bibiografia.html" class="nav_link">Bibliografía</a></li>
+    <header class="navbar">
+        <div class="burguer"></div>
+        <a class="logo" href="./index.html"><img src="./img/logo.svg" alt=""></a>
+        <ul>
+            <li><a href="./index.html#1">Inicio</a></li>
+            <li><a href="./index.html#2">Introducción</a></li>
+            <li><a href="./index.html#3">Desastre</a></li>
+            <li><a href="./index.html#4">Tintes</a></li>
+            <li><a href="./index.html#5">Microfibras</a></li>
+            <li><a href="./index.html#6">Aun se puede hacer algo</a></li>
+            <li><a href="./index.html#7">Bibliografía</a></li>
+            <li><a href="./index.html#8">Pie de página</a></li>
         </ul>
-    </nav>
-    <div class="container">
-        <header class="hero" id="1">
-            <div class="hero_inner">
-                <h1>Contaminación <br> de la Industria textil</h1>
-                <h2>Impacto global</h2>
-            </div>
-        </header>
-        <main>
-            <section id="2">
-                <article>
-                    <h2>Introducción</h2>
-                    <p>La industria textil es la segunda industria más contaminante después de la petrolera consumiendo más energía que la industria de la aviación y el transporte marítimo combinadas. Esto, debido a que una prenda, ya sea fabricada con material sintético o fibras naturales, contamina durante todo su proceso de producción.</p>
-                </article>
-            </section>
-            <section id="3">
-                <article>
-                    <p>El poliéster, la fibra sintética más utilizada para confeccionar ropa, según un informe de la BBC, necesita 70 millones de barriles de petróleo cada año para su elaboración, y tarda aproximadamente 200 años en descomponerse.  Por otro lado, las fibras naturales necesitan materias primas como el algodón, y solo para obtener un kilo de algodón es necesario utilizar 10 mil litros de agua. En ese sentido, se calcula que anualmente para la fabricación de ropa se utilizan 93 mil millones de metros cúbicos de agua, cantidad suficiente para satisfacer la necesidad de 5 millones de personas.</p>
-                </article>
-            </section>
-            <section id="4">
-                <article>
-                    <p>Solo en  2015 la industria textil utilizó 79 000 millones de metros cúbicos de agua.</p>
-                    <p>Según las estimaciones, la producción textil, a través de los tintes y los productos de acabado, es responsable de aproximadamente el 20 % de la contaminación mundial de agua potable.</p>
-            </section>
-            <section id="5">
-                <article>
-                    <p>Cada año unos 500 mil toneladas de microfibras acaban en el océano debido al lavado de materiales sintéticos.</p>
-                    <p>El 35 % de los microplásticos primarios liberados en el medio ambiente provienen del lavado de ropa sintética. Una sola carga de ropa de poliéster puede verter 700 000 fibras microplásticas que pueden llegar a la cadena alimentaria.</p</article>
-                </article>
-            </section>
-        </main>
-        <footer id="footer">
+    </header>
+    <main>
+        <section class="section hero" id="1">
+            <h1>Contaminación del agua por la industria textil</h1>
+        </section>
+        <section class="section" id="2">
+            <h2>Introducción</h2>
+            <p>La industria textil es la segunda industria más contaminante después de la petrolera consumiendo más energía que la industria de la aviación y el transporte marítimo combinadas. Esto, debido a que una prenda, ya sea fabricada con material sintético o fibras naturales, contamina durante todo su proceso de producción.</p>
+        </section>
+        <section class="section" id="3">
+            <h2>El desastre</h2>
+            <p>El poliéster, la fibra sintética más utilizada para confeccionar ropa, según un informe de la BBC, necesita 70 millones de barriles de petróleo cada año para su elaboración, y tarda aproximadamente 200 años en descomponerse. Por otro lado, las fibras naturales necesitan materias primas como el algodón, y solo para obtener un kilo de algodón es necesario utilizar 10 mil litros de agua.En ese sentido, se calcula que anualmente para la fabricación de ropa se utilizan 93 mil millones de metros cúbicos de agua, cantidad suficiente para satisfacer la necesidad de 5 millones de personas.</p>
+        </section>
+        <section class="section" id="4">
+            <h3>Tintes</h3>
+            <p>Según las estimaciones, la producción textil, a través de los tintes y los productos de acabado, es responsable de aproximadamente el 20 % de la contaminación mundial de agua potable.</p>
+            <p>Se estima que hay más de 10000 colorantes distintos y gran parte de ellos son colorantes sintéticos, dentro de los colorantes sintéticos destacan los conocidos como colorantes azoicos. Los colorantes tienen una eficacia baja, se estima que hasta el 15% del producto usado no se fija al tejido y es liberado al medio ambiente.</p>
+            <p>el 93% del agua que llega a la fábrica sale coloreada y contaminada por metales pesados o compuestos orgánicos.</p>
+            <p>La coloración en el agua impide el paso de luz solar, inhibiendo el proceso de fotosíntesis, reduce el oxígeno disuelto por lo que daña severamente la vida acuática.</p>
+        </section>
+        <section class="section" id="5">
+            <h3>Microfibras</h3>
+            <p>El 35 % de los microplásticos primarios liberados en el medio ambiente provienen del lavado de ropa sintética. Una sola carga de ropa de poliéster puede verter 700.000 fibras microplásticas que pueden llegar a la cadena alimentaria.</p>
+            <p>Cada año unos 500 mil toneladas de microfibras acaban en el océano debido al lavado de materiales sintéticos.</p>
+        </section>
+        <section class="section" id="6">
+            <h2>Aun se puede hacer algo</h2>
+            <p>una de las tecnología más viables actualmente, es la Fotocatálisis que,  con  ayuda  de  un  fotocatalizador  (agente  oxidante)  y  con  luz  ultravioleta,  puede   llegar   a   degradar   gran   cantidad   de   contaminantes   orgánicos, convirtiéndolo  en  uno  de  los  tratamientos  más  viables  para  tratar  aguas  contaminadas con  colorantes  textiles,  ya  que  ayuda  considerablemente  en  la  disminución  del  color  y reducción del contenido orgánico.</p>
+            <p>Los hongos ligninolíticos han sido estudiados por sus excelentes capacidades biodegradativas ya que su sistema enzimático les permite metabolizar compuestos difíciles de degradar para otros organismos, como la lignina y la celulosa. Es este potente sistema enzimático lo que les permite degradar multitud de contaminantes. Se está desarrollando tecnología (biorreactores) que permita su aplicación en efluentes textiles contaminados.</p>
+            <p>Los biorreactores más eficaces parecen ser los de discos rotatorios que, si bien no son los más rápidos tienen menos problemas a largo plazo. Quizá para que esta tecnología se asiente en el futuro sea necesario aumentar la decolorización al máximo para poder reutilizar el agua en un ciclo cerrado dentro de la fábrica ya que esto sí tendría un beneficio económico para las empresas a medio plazo.</p>
+        </section>
+        <section class="section" id="7">
+            <h2>Bibliografía</h2>
+            <ul>
+                <li><a href="//www.europarl.europa.eu/news/es/headlines/society/20201208STO93327/el-impacto-de-la-produccion-textil-y-de-los-residuos-en-el-medio-ambiente">El impacto de la producción textil y de los residuos en el medio ambiente (infografía)</a></li>
+                <li><a href="https://www.foroambiental.net/archivo/noticias-ambientales/residuos/2066">Foro ambiental</a></li>
+                <li><a href="https://publicaciones.ucuenca.edu.ec/ojs/index.php/quimica/article/view/2216">Los Colorantes Textiles Industriales Y Tratamientos Óptimos De Sus Efluentes De Agua Residual: Una Breve Revisión</a></li>
+                <li><a href="https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S1665-27382013000300020">El proceso de sedimentación como una aplicación sencilla para reducir contaminantes en efluentes textiles</a></li>
+                <li><a href="https://ruc.udc.es/dspace/handle/2183/27138">Revisión bibliográfica: uso de microorganismos como biorremediadores de efluentes textiles contaminados por colorantes azoicos</a></li>
+            </ul>
+        </section>
+        <footer class="section" id="8">
             <h3>página creada por:</h3>
-            <a href="#">Nicolas Dragaš</a>
-            <a href="#">Martín Tomasello</a>
+            <ul>
+                <li><a href="https://ead-codigo-2022.github.io/bitacora-personal-nkodragas/">Nicolas Dragaš</a></li>
+                <li><a href="https://ead-codigo-2022.github.io/bitacora-personal-martintomasello/">Martín Tomasello</a></li>
+            </ul>
+            <p>Diseño desde el código 2022</p>
         </footer>
-    </div>
+    </main>
 </body>
 </html>
